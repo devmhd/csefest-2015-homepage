@@ -1,0 +1,27 @@
+body{
+	padding: 3em 10em;
+}
+
+img#bg{
+	position: absolute;
+}
+
+img.girl{
+	position: absolute;
+	top: 697px;
+	left: 1422px;
+	-webkit-transform: rotateY(0deg); /* Safari */
+	transform: rotateY(0deg);
+
+	transition : transform 1.5s;
+
+
+}
+
+img.rotated{
+
+	-webkit-transform: rotateY(150deg); /* Safari */
+	transform: rotateY(150deg);
+	transition : transform 1.5s;
+
+}
