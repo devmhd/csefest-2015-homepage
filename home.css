@@ -25,3 +25,60 @@ img.rotated{
 	transition : transform 1.5s;
 
 }
+
+
+img.kite{
+	position: absolute;
+	top: 334px;
+  	left: 1235px;
+  	transform-origin: 0% 100%;
+
+  	-webkit-transform: rotate(30deg);
+
+  	-webkit-animation: kitefly 2s infinite;
+}
+
+
+@-webkit-keyframes kitefly {
+   0% {
+    -webkit-transform: rotate(30deg) scale(1, 1);
+
+  }
+  20% {
+    -webkit-transform: rotate(15deg) scale(0.8, 0.8);
+  }
+
+  40% {
+    -webkit-transform: rotate(5deg) scale(0.9, 0.9);
+  }
+
+  60% {
+    -webkit-transform: rotate(-2deg) scale(0.8, 0.8);
+  }
+
+}
+@-moz-keyframes kitefly {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(45deg);
+  }
+}
+@-o-keyframes kitefly {
+   0% {
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    -o-transform: rotate(45deg);
+  }
+}
+@keyframes kitefly {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+}
+
