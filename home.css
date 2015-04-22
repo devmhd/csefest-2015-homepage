@@ -19,6 +19,11 @@ div#main-container{
   position: relative;
 }
 
+.clock{
+
+  top: 50px;
+}
+
 nav{
   z-index: 2;
   display: block;
@@ -160,7 +165,7 @@ nav a#publication img{
 
 img.girl{
 	position: absolute;
-  top: 373px;
+  top: 374px;
   left: 730px;
 	
 -webkit-transform: rotateY(0deg);
@@ -221,8 +226,8 @@ animation-timing-function: linear;
 
 div.kite{
 	position: absolute;
-	  top: 199px;
-  left: 621px;
+top: 203px;
+left: 620px;
   
 -webkit-transform-origin: 0% 100%;
 -webkit-transform: rotate(30deg) scale(1.2, 1.2);

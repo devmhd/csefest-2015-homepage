@@ -71,23 +71,21 @@
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
 
-	jQuery( window ).resize(function() {
-		var scaleRatio = jQuery(window).width() / 2000.0;
+    jQuery(document).ready(function() {
+
+    	var scaleRatio = jQuery(window).width() / 2400.0;
     	console.log("ratio " + scaleRatio);
     	jQuery("body").css({"-webkit-transform":"scale(" + scaleRatio + ")",
     						"-moz-transform":"scale(" + scaleRatio + ")",
     						"-o-transform":"scale(" + scaleRatio + ")",
     						"transform":"scale(" + scaleRatio + ")"});
-	});
-
-    jQuery(document).ready(function() {
-
     	
 
-        jQuery('nav a').tooltipster({
-        	'theme' : 'tooltipster-light',
-        	'position': 'right'
-        });
+        // jQuery('nav a').tooltipster({
+        // 	'theme' : 'tooltipster-light',
+        // 	'position': 'right',
+        // 	'speed' : 0
+        // });
 
         // Grab the current date
 				var currentDate = new Date();
@@ -107,7 +105,7 @@
     });
 </script>
 
-<!-- <script src="home.js" ></script> -->
+<script src="home.js" ></script>
 
 <!-- Seminars
 Games & Sports

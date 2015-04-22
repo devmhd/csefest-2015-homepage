@@ -9,7 +9,7 @@ function girlSpin(){
 		spinningGirl.className ="girl";
 		girlRotated = false;
 
-		setTimeout(girlSpin, 2500);		
+		setTimeout(girlSpin, 7000);		
 
 	} else {
 
