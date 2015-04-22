@@ -1,4 +1,6 @@
 body{
+
+  transform-origin: 50% 0;
 	padding: 20px 0;
 }
 

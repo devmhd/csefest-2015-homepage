@@ -70,7 +70,17 @@
 <script type="text/javascript" src="flipclock.min.js"></script>
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
+
+	jQuery( window ).resize(function() {
+		var scaleRatio = jQuery(window).width() / 1800.0;
+    	console.log("ratio " + scaleRatio);
+    	jQuery("body").css({"-webkit-transform":"scale(" + scaleRatio + ")"});
+	});
+	
     jQuery(document).ready(function() {
+
+    	
+
         jQuery('nav a').tooltipster({
         	'theme' : 'tooltipster-light',
         	'position': 'right'
