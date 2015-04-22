@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-
+	<title>CSE Festival 2015</title>
+	<link rel="stylesheet" type="text/css" href="tooltipster.css">
+	<link rel="stylesheet" type="text/css" href="tooltipster-light.css">
+	<link rel="stylesheet" type="text/css" href="tooltipster-noir.css">
+	<link rel="stylesheet" type="text/css" href="tooltipster-punk.css">
+	<link rel="stylesheet" type="text/css" href="tooltipster-shadow.css">
+	<link rel="stylesheet" type="text/css" href="flipclock.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
 	
 </head>
 <body>
+
+<div id="main-container-wrapper">
+
+<div class="clock" style="margin:2em;"></div>
+
+<nav>
+	
+
+	<a id='seminar' title="Seminars" href="google.com">
+		<img src="img/baloon-seminarr.png">
+	</a>
+
+	<a id='sports' title="Games & Sports" href="google.com">
+		<img src="img/baloon-sports.png">
+	</a>
+
+<!-- 	<a id='compevents' title="Competitive Events" href="google.com">
+		<img src="img/baloon-seminar.png">
+	</a>
+
+	<a id='gallery' title="Gallery" href="google.com">
+		<img src="img/baloon-seminar.png">
+	</a>
+
+	<a id='alumreg' title="Alumni Registration" href="google.com">
+		<img src="img/baloon-seminar.png">
+	</a>
+
+	<a id='publication' title="Publication" href="google.com">
+		<img src="img/baloon-seminar.png">
+	</a> -->
+
+</nav>
+
 
 <div id="main-container">
 
@@ -20,11 +59,48 @@
 
 
 
+
+
 </div>
 
-<script src="home.js" ></script>
 
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="flipclock.min.js"></script>
+<script type="text/javascript" src="jquery.tooltipster.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        jQuery('nav a').tooltipster({
+        	'theme' : 'tooltipster-light',
+        	'position': 'right'
+        });
 
+        // Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var festDate  = new Date("April 29, 2015 00:00:00");
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = festDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = jQuery('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+
+    });
+</script>
+
+<!-- <script src="home.js" ></script> -->
+
+<!-- Seminars
+Games & Sports
+Competitive Events
+Gallery
+Alumni Registration
+Publication -->
 
 
 </body>
