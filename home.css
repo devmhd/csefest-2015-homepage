@@ -1,5 +1,8 @@
 body{
 
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
   transform-origin: 50% 0;
 	padding: 20px 0;
 }
@@ -28,81 +31,129 @@ nav{
 
 img#bg{
   
-   max-width: 100%;
+  max-width: 100%;
   top: 0;
   left: 0;
 }
 
 
 nav a{
-  display: block;
-  position: absolute;
+display: block;
+position: absolute;
 
 
 -webkit-transform: translate(0px,200%) scale(0.1);
-    opacity: 0;
+-moz-transform: translate(0px,200%) scale(0.1);
+-o-transform: translate(0px,200%) scale(0.1);
+transform: translate(0px,200%) scale(0.1);
+
+opacity: 0;
 
 }
 
 
 
 nav a#seminar{
-    top: -237px;
+  top: -237px;
   left: -44px;
 
-    -webkit-animation: baloonfly 3s 2s 1 normal forwards; 
+  -webkit-animation: baloonfly 3s 2s 1 normal forwards;
+  -moz-animation: baloonfly 3s 2s 1 normal forwards;
+  -o-animation: baloonfly 3s 2s 1 normal forwards;
+  animation: baloonfly 3s 2s 1 normal forwards; 
+
 }
 nav a#sports{
-   top: -202px;
+  top: -202px;
   left: 249px;
+  
+  -webkit-animation: baloonfly 3s 2.3s 1 normal forwards; 
+  -moz-animation: baloonfly 3s 2.3s 1 normal forwards; 
+  -o-animation: baloonfly 3s 2.3s 1 normal forwards; 
+  animation: baloonfly 3s 2.3s 1 normal forwards; 
 
-    -webkit-animation: baloonfly 3s 2.3s 1 normal forwards; 
 }
 nav a#compevents{
-   top: -65px;
+  top: -65px;
   left: -157px;
 
-    -webkit-animation: baloonfly 3s 2.5s 1 normal forwards; 
+  -webkit-animation: baloonfly 3s 2.5s 1 normal forwards; 
+  -moz-animation: baloonfly 3s 2.5s 1 normal forwards; 
+  -o-animation: baloonfly 3s 2.5s 1 normal forwards; 
+  animation: baloonfly 3s 2.5s 1 normal forwards; 
+
 }
 nav a#gallery{
-    top: 25px;
+  top: 25px;
   left: 311px;
-    -webkit-animation: baloonfly 3s 2.8s 1 normal forwards; 
+  -webkit-animation: baloonfly 3s 2.8s 1 normal forwards; 
+  -moz-animation: baloonfly 3s 2.8s 1 normal forwards; 
+  -o-animation: baloonfly 3s 2.8s 1 normal forwards; 
+  animation: baloonfly 3s 2.8s 1 normal forwards; 
 }
 nav a#alumreg{
   top: 104px;
   left: 122px;
+  
+-webkit-animation: baloonfly 3s 3.3s 1 normal forwards; 
+-moz-animation: baloonfly 3s 3.3s 1 normal forwards; 
+-o-animation: baloonfly 3s 3.3s 1 normal forwards; 
+animation: baloonfly 3s 3.3s 1 normal forwards; 
 
-    -webkit-animation: baloonfly 3s 3.3s 1 normal forwards; 
 }
 nav a#publication{
   top: -103px;
   left: 92px;
-    -webkit-animation: baloonfly 3s 3s 1 normal forwards; 
+  
+  -webkit-animation: baloonfly 3s 3s 1 normal forwards; 
+  -moz-animation: baloonfly 3s 3s 1 normal forwards;
+  -o-animation: baloonfly 3s 3s 1 normal forwards;
+  animation: baloonfly 3s 3s 1 normal forwards;
 }
 
 nav a img{
 
   -webkit-transform: translate(0px,0px) scale(0.8);
+  -moz-transform: translate(0px,0px) scale(0.8);
+  -o-transform: translate(0px,0px) scale(0.8);
+  transform: translate(0px,0px) scale(0.8);
 }
 
 nav a#seminar img{
     -webkit-animation: baloonwander 3s 2s infinite; 
+    -moz-animation: baloonwander 3s 2s infinite; 
+    -o-animation: baloonwander 3s 2s infinite; 
+    animation: baloonwander 3s 2s infinite; 
 }
 nav a#sports img{
-    -webkit-animation: baloonwander 3s 2.3s infinite; 
+    -webkit-animation: baloonwander 3s 2.3s infinite;
+    -moz-animation: baloonwander 3s 2.3s infinite;
+    -o-animation: baloonwander 3s 2.3s infinite;
+    animation: baloonwander 3s 2.3s infinite; 
 }
 nav a#compevents img{
     -webkit-animation: baloonwander 3s 2.5s infinite; 
+    -moz-animation: baloonwander 3s 2.5s infinite; 
+    -o-animation: baloonwander 3s 2.5s infinite; 
+    animation: baloonwander 3s 2.5s infinite; 
 }
 nav a#gallery img{
     -webkit-animation: baloonwander 3s 2.8s infinite; 
+    -moz-animation: baloonwander 3s 2.8s infinite; 
+    -o-animation: baloonwander 3s 2.8s infinite; 
+    animation: baloonwander 3s 2.8s infinite; 
 }
 nav a#alumreg img{
     -webkit-animation: baloonwander 3s 3.3s infinite; 
+    -moz-animation: baloonwander 3s 3.3s infinite; 
+    -o-animation: baloonwander 3s 3.3s infinite; 
+    animation: baloonwander 3s 3.3s infinite; 
 }
 nav a#publication img{
     -webkit-animation: baloonwander 3s 3s infinite; 
+    -moz-animation: baloonwander 3s 3s infinite; 
+    -o-animation: baloonwander 3s 3s infinite; 
+    animation: baloonwander 3s 3s infinite; 
 }
 
 
@@ -150,20 +201,20 @@ img.kite{
   top: -19px;
   left: 96px;
   
-  -webkit-transform-origin: 27.73% 18.6%;
+-webkit-transform-origin: 27.73% 18.6%;
 -webkit-animation: kitefly 0.5s infinite;
 -webkit-animation-timing-function: linear;
 
 -moz-transform-origin: 27.73% 18.6%;
--moz-animation: kitefly 5s infinite;
+-moz-animation: kitefly 0.5s infinite;
 -moz-animation-timing-function: linear;
 
 -o-transform-origin: 27.73% 18.6%;
--o-animation: kitefly 5s infinite;
+-o-animation: kitefly 0.5s infinite;
 -o-animation-timing-function: linear;
 
 transform-origin: 27.73% 18.6%;
-//animation: kitefly 1s infinite;
+animation: kitefly 0.5s infinite;
 animation-timing-function: linear;
 
 }
@@ -173,7 +224,7 @@ div.kite{
 	  top: 199px;
   left: 621px;
   
-  -webkit-transform-origin: 0% 100%;
+-webkit-transform-origin: 0% 100%;
 -webkit-transform: rotate(30deg) scale(1.2, 1.2);
 -webkit-animation: cordfly 5s infinite;
 
@@ -189,7 +240,7 @@ div.kite{
 
 transform-origin: 0% 100%;
 transform: rotate(30deg) scale(1.2, 1.2);
-//animation: cordfly 5s infinite;
+animation: cordfly 5s infinite;
 
 }
 
@@ -197,129 +248,156 @@ transform: rotate(30deg) scale(1.2, 1.2);
 
 @-webkit-keyframes cordfly {
    0% { -webkit-transform: rotate(30deg) scale(1.2, 1.2)}
- 
   50% { -webkit-transform: rotate(5deg) scale(1.2, 1.2)}
-  
+}
 
+@-moz-keyframes cordfly {
+   0% { -moz-transform: rotate(30deg) scale(1.2, 1.2)}
+  50% { -moz-transform: rotate(5deg) scale(1.2, 1.2)}
+}
+
+@-o-keyframes cordfly {
+   0% { -o-transform: rotate(30deg) scale(1.2, 1.2)}
+  50% { -o-transform: rotate(5deg) scale(1.2, 1.2)}
+}
+
+@keyframes cordfly {
+   0% { transform: rotate(30deg) scale(1.2, 1.2)}
+  50% { transform: rotate(5deg) scale(1.2, 1.2)}
 }
 
 
 @-webkit-keyframes kitefly {
    0% { -webkit-transform: translate(0px,0px)}
- 
   30% { -webkit-transform: translate(8%,0%)}
   50% { -webkit-transform: translate(4%,5%)}
   
-
 }
-
-
-@-moz-keyframes cordfly {
-   0% { -moz-transform: rotate(30deg) scale(1.2, 1.2)}
-  25% { -moz-transform: rotate(15deg) scale(0.7, 0.8)}
-  50% { -moz-transform: rotate(5deg) scale(1.2, 1.2)}
-  75% { -moz-transform: rotate(-30deg) scale(0.9, 0.9)}
-
-}
-
 
 @-moz-keyframes kitefly {
-   0% { -moz-transform: rotate(0deg)}
-  22% { -moz-transform: rotate(-40deg)}
-  25% { -moz-transform: rotate(-40deg)}
-  30% { -moz-transform: rotate(60deg)}
-  50% { -moz-transform: rotate(90deg)}
-  55% { -moz-transform: rotate(0deg)}
-  75% { -moz-transform: rotate(-20deg)}
-  78%{ -moz-transform: rotate(178deg)}
-  95%{ -moz-transform: rotate(150deg)}
-
+   0% { -moz-transform: translate(0px,0px)}
+  30% { -moz-transform: translate(8%,0%)}
+  50% { -moz-transform: translate(4%,5%)}
+  
 }
-
-@-o-keyframes cordfly {
-   0% { -o-transform: rotate(30deg) scale(1.2, 1.2)}
-  25% { -o-transform: rotate(15deg) scale(0.7, 0.8)}
-  50% { -o-transform: rotate(5deg) scale(1.2, 1.2)}
-  75% { -o-transform: rotate(-30deg) scale(0.9, 0.9)}
-
-}
-
 
 @-o-keyframes kitefly {
-   0% { -o-transform: rotate(0deg)}
-  22% { -o-transform: rotate(-40deg)}
-  25% { -o-transform: rotate(-40deg)}
-  30% { -o-transform: rotate(60deg)}
-  50% { -o-transform: rotate(90deg)}
-  55% { -o-transform: rotate(0deg)}
-  75% { -o-transform: rotate(-20deg)}
-  78%{ -o-transform: rotate(178deg)}
-  95%{ -o-transform: rotate(150deg)}
-
+   0% { -o-transform: translate(0px,0px)}
+  30% { -o-transform: translate(8%,0%)}
+  50% { -o-transform: translate(4%,5%)}
+  
 }
-
-@keyframes cordfly {
-   0% { transform: rotate(30deg) scale(1.2, 1.2)}
-  25% { transform: rotate(15deg) scale(0.7, 0.8)}
-  50% { transform: rotate(5deg) scale(1.2, 1.2)}
-  75% { transform: rotate(-30deg) scale(0.9, 0.9)}
-
-}
-
 
 @keyframes kitefly {
-   0% { transform: rotate(0deg)}
-  22% { transform: rotate(-40deg)}
-  25% { transform: rotate(-40deg)}
-  30% { transform: rotate(60deg)}
-  50% { transform: rotate(90deg)}
-  55% { transform: rotate(0deg)}
-  75% { transform: rotate(-20deg)}
-  78%{ transform: rotate(178deg)}
-  95%{ transform: rotate(150deg)}
-
+   0% { transform: translate(0px,0px)}
+  30% { transform: translate(8%,0%)}
+  50% { transform: translate(4%,5%)}
+  
 }
+
+
 
 
 @-webkit-keyframes baloonfly {
-   0% { 
 
+   0% { 
     -webkit-transform: translate(0px,200%) scale(0.1);
     opacity: 0;
-
    }
- 
+
   30% {
     -webkit-transform: translate(0px,-0px) scale(0.1);
     opacity: 1;
   }
   50% {
-
     -webkit-transform: scale(1);
   }
 
   100%{
-
     opacity: 1;
     -webkit-transform: scale(1) translate(0px,-0px);
-
   }
-  
+}
 
+@-moz-keyframes baloonfly {
+
+   0% { 
+    -moz-transform: translate(0px,200%) scale(0.1);
+    opacity: 0;
+   }
+
+  30% {
+    -moz-transform: translate(0px,-0px) scale(0.1);
+    opacity: 1;
+  }
+  50% {
+    -moz-transform: scale(1);
+  }
+
+  100%{
+    opacity: 1;
+    -moz-transform: scale(1) translate(0px,-0px);
+  }
+}
+
+@-o-keyframes baloonfly {
+
+   0% { 
+    -o-transform: translate(0px,200%) scale(0.1);
+    opacity: 0;
+   }
+
+  30% {
+    -o-transform: translate(0px,-0px) scale(0.1);
+    opacity: 1;
+  }
+  50% {
+    -o-transform: scale(1);
+  }
+
+  100%{
+    opacity: 1;
+    -o-transform: scale(1) translate(0px,-0px);
+  }
+}
+
+@keyframes baloonfly {
+
+   0% { 
+    transform: translate(0px,200%) scale(0.1);
+    opacity: 0;
+   }
+
+  30% {
+    transform: translate(0px,-0px) scale(0.1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1) translate(0px,-0px);
+  }
 }
 
 @-webkit-keyframes baloonwander {
+   0% {-webkit-transform: translate(0px,0px) scale(0.8)}
+   50%{-webkit-transform: translate(10%,0px) scale(0.8)}
+}
 
-   0% { 
+@-moz-keyframes baloonwander {
+   0% {-moz-transform: translate(0px,0px) scale(0.8)}
+   50%{-moz-transform: translate(10%,0px) scale(0.8)}
+}
 
-    -webkit-transform: translate(0px,0px) scale(0.8);
+@-o-keyframes baloonwander {
+   0% {-o-transform: translate(0px,0px) scale(0.8)}
+   50%{-o-transform: translate(10%,0px) scale(0.8)}
+}
 
-   }
-   50%{
-
-    -webkit-transform: translate(10%,0px) scale(0.8);
-
-   }
-
-
+@keyframes baloonwander {
+   0% {transform: translate(0px,0px) scale(0.8)}
+   50%{transform: translate(10%,0px) scale(0.8)}
 }

@@ -72,11 +72,14 @@
 <script>
 
 	jQuery( window ).resize(function() {
-		var scaleRatio = jQuery(window).width() / 1800.0;
+		var scaleRatio = jQuery(window).width() / 2000.0;
     	console.log("ratio " + scaleRatio);
-    	jQuery("body").css({"-webkit-transform":"scale(" + scaleRatio + ")"});
+    	jQuery("body").css({"-webkit-transform":"scale(" + scaleRatio + ")",
+    						"-moz-transform":"scale(" + scaleRatio + ")",
+    						"-o-transform":"scale(" + scaleRatio + ")",
+    						"transform":"scale(" + scaleRatio + ")"});
 	});
-	
+
     jQuery(document).ready(function() {
 
     	
