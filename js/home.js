@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 			// dynamic scaling
 			var scaleRatio = jQuery(window).width() / 2400.0;
 			console.log("ratio " + scaleRatio);
-			jQuery("body").css({"-webkit-transform":"scale(" + scaleRatio + ")",
+			jQuery("#main-container-wrapper").css({"-webkit-transform":"scale(" + scaleRatio + ")",
 				"-moz-transform":"scale(" + scaleRatio + ")",
 				"-o-transform":"scale(" + scaleRatio + ")",
 				"transform":"scale(" + scaleRatio + ")"});

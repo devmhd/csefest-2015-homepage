@@ -1,10 +1,7 @@
 
 body{
 
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  -o-transform-origin: 50% 0;
-  transform-origin: 50% 0;
+  
 	padding: 20px 0;
 }
 
@@ -13,6 +10,11 @@ div#main-container-wrapper{
 
   margin: 20px auto;
   width: 1200px;
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
 
 }
 
