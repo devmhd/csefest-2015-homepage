@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
 
 			// init flipping countdown
 			var currentDate = new Date();
-			var festDate  = new Date("September 1, 2015 00:00:00"); //Festival day
+			var festDate  = new Date("December 31, 2016 00:00:00"); //Festival day
 			var diff = festDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 			clock = jQuery('.clock').FlipClock(diff, {
